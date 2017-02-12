@@ -3,7 +3,7 @@
 //  Swift App
 //
 //  Created by De Winter Laura on 12/02/17.
-//  Copyright © 2017 Comflow. All rights reserved..
+//  Copyright © 2017 Comflow. All rights reserved.
 //
 
 import UIKit
@@ -21,8 +21,8 @@ class ViewController: UIViewController {
         
         tapCount = tapCount + 1
         
-        if tapCount >= 20 {
-            Thelabel.text = "20x geklikt"
+        if tapCount >= 10 {
+            Thelabel.text = "10x geklikt"
         }
         
     }
