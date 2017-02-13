@@ -12,18 +12,16 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var Thelabel: UILabel!
     
+    @IBOutlet weak var Text1: UITextField!
+    
+    @IBOutlet weak var Text2: UITextField!
+    
     var tapCount = 0
     
     
     @IBAction func Pushmetapped(_ sender: Any) {
-        
-        Thelabel.text = "Honey"
-        
-        tapCount = tapCount + 1
-        
-        if tapCount >= 10 {
-            Thelabel.text = "10x geklikt"
-        }
+       
+       Thelabel.text = "Answer: \(Double(Text1.text!)! + Double(Text2.text!)!)"
         
     }
     
