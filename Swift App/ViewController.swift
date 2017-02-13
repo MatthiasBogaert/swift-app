@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var Thelabel: UILabel!
     
     @IBOutlet weak var Text1: UITextField!
@@ -20,21 +20,30 @@ class ViewController: UIViewController {
     
     
     @IBAction func Pushmetapped(_ sender: Any) {
-       
-       Thelabel.text = "Answer: \(Double(Text1.text!)! + Double(Text2.text!)!)"
         
+        let addition = false
+        
+        if addition {
+            
+            Thelabel.text = "Answer: \(Double(Text1.text!)! + Double(Text2.text!)!)"
+            
+        } else {
+            Thelabel.text = "Answer: \(Double(Text1.text!)! - Double(Text2.text!)!)"
+        }
     }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 
